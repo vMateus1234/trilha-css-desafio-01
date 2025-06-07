@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "Edu SA Hand";
+    src: url(Edu_SA_Hand/EduSAHand-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Playfair";
+    src: url(Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf)
+}
+@font-face {
+    font-family: "Oswald";
+    src: url(Oswald/Oswald-VariableFont_wght.ttf);
+}
+* {
+    margin: 0; 
+    padding: 0;
+    transform: none;
+    box-sizing: border-box;
+    font-family: "Edu SA Hand"
+}
+p {
+    color: white;
+}
+body {
+    background-color: black;
+}
+.banner {
+    background-image: linear-gradient( rgba(95, 56, 98, 0.6), rgba(86, 11, 140, .2),rgba(0, 0, 0, 0.6)), url('assets/images/banner.png');
+    background-size: cover; /* redimenciona a img para caber */
+    background-repeat: no-repeat; /* Não permite que a imagem se repita, fazendo ela consumir todo o tamanho da area */
+    height: 650px; /* Fala sobre a altura da imagem */
+    padding-top: 50px; /* Size */
+    border-bottom: 1px solid #976cae80; /* Borda na parte inferior */
+}
+.banner .banner-content {
+  color: white; /* todos os filhos estão escritos com branco*/ 
+  width: 700px; /* limita os elementos para 600px de largura*/
+  margin: auto; /* centraliza os elementos horizontalmente*/
+  text-align: center;
+}
+.banner h1 {
+    font-size: 2rem; /* Size */
+    text-transform: uppercase; /* Transforma meu texto em caixa alta */
+    font-weight: 900;  /* Deixa o Texto grosso */
+    color: transparent; /* Para fazer o gradiente de cores diferentes na letra*/
+    background: linear-gradient(#cd3bbc, #7115b7); /* cria um degradê em linha reta (webkit garante compatibilidade com navegadores velhos)*/
+    background-clip: text; /* cola a cor nos caracteres ao inves do fundo*/ 
+}
+.banner p {
+    font-size: large; /* tamanho da fonte*/
+    margin: 15px, 0 30px; /* distancia dos elementos*/
+    font-weight: 500;
+    padding: 15px 20px 15px;
+    letter-spacing: 2px;
+}   
+.logo {
+    background-color: rgba(0, 0, 0, 0.2); /*cor de fundo*/
+    height: 260px; /* altura do elemento*/
+    width: 270px; /* transfoma a imagem em um cubo com o height*/
+    margin: auto;
+    border-radius: 50%;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+.logo img {
+  margin: auto;
+  width: 100%;
+  height: 100%; 
+  object-fit: contain;  /*ajusta a imagem dentro da borda*/
+}
+.banner .banner-content button {
+  font-family: "Playfair"; /* definindo uma fonte diferente*/
+  color: rgb(202, 202, 202); /*cor*/
+  font-size: 1.3rem; /* tamanho da fonte em REM*/
+  font-weight: 900; /* Grossura*/
+  padding: 15px 25px;
+  margin: 20px 20px 20px 30px;
+  text-transform: uppercase; /* caixa alta*/
+  letter-spacing: 2px; /* espaçamento das letras*/
+  background-color: transparent; /* mesmo esquema do h1*/
+  border-image: linear-gradient(#cd3bbc, #7115b7);
+  border-image-slice: 10;
+  border-radius: 30px;
+}
+h2 {
+    font-size: 1.7rem;
+    color: transparent;
+    background: linear-gradient(#cd3bbc, #7115b7);
+    background-clip: text;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 55px 20px 20px;
+}
+#course-content p {
+    text-align: center;
+    margin: auto;
+    width: 700px;
+    margin-bottom: 10px;
+}
+.modules-list .module {
+  font-family: "Playfair"; /* definindo uma fonte diferente*/
+  color: rgb(202, 202, 202); /*cor*/
+  font-size: .8rem; /* tamanho da fonte em REM*/
+  font-weight: 900; /* Grossura*/
+  padding: 15px;
+  text-transform: uppercase; /* caixa alta*/
+  width: 590px; /* largura */
+  margin: 0 auto 20px; text-align: center; /* joga pra meio */
+  background: rgb(73, 73, 73);
+  letter-spacing: 1px; /* espaçamento das letras*/
+  border: 1.5px solid #7115b7;
+  border-radius: 100px; /* da uma polida nas bordas, arredonda*/
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7); /* não peguei 100% do shadow*/
+}
+span {
+    font-family: "Playfair"; /* definindo uma fonte diferente*/
+    color: #000000;
+    background-origin: padding-box;
+    font-weight: 900;
+}
+#transform-world {
+    margin-top: 80px;
+    background-image: url(assets/images/woman-code.png);
+    background-size: cover; /* redimenciona a img para caber */
+    background-repeat: no-repeat; /* Não permite que a imagem se repita, fazendo ela consumir todo o tamanho da area */
+    height: 600px; /* Fala sobre a altura da imagem */
+     /* Size */
+    background-attachment: fixed;
+    border-top: 1px solid #a600ff80; /* Borda na parte sup */
+    border-bottom: 1px solid #a600ff80; /* Borda na parte inf */
+    padding: 200px;
+}
+#transform-world p {
+    font-family: "Oswald";
+    font-weight: 600;
+    font-size: 2.5rem;
+    max-width: 250px; /* limita o máximo de largura do texto*/
+    text-shadow: 3px 2px #7115b7;   
+}
+section {
+    margin: auto;
+}
+
+#professional-challenges p {
+    padding: 20px;
+    max-width: 750px;
+    font-size: .9rem;
+    margin: auto;
+}
+#professional-challenges {
+    text-align: center;
+    border-bottom: 1px solid #7115b7;
+}
+footer {
+    margin: auto;
+    text-align: center;
+    padding: 90px;
+    background-image: linear-gradient(black, #7115b76f);
+}
+footer a {
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none;
+}
